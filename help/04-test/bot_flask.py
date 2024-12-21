@@ -17,8 +17,8 @@ class Base(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     test = db.Column(db.String(), nullable=False)
 
-# with app.app_context():
-#     db.create_all()
+with app.app_context():
+    db.create_all()
 
 # --- Route --------------------------
 @app.route('/')
